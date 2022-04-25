@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        article {
+            /* height: 100%; */
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            /* align-content: center; */
+            /* flex-wrap: wrap; */
+            /* align-items: center; */
+            /* justify-content: center; */
+
+        }
+
+        p {
+            color: black;
+            width: 200px;
+        }
+
+        #p1 {
+            background-color: #a2b9bc;
+            
+
+        }
+
+        #p2 {
+            background-color: #b2ad7f;
+        
+        }
+
+        #p3 {
+            background-color: #878f99;
+        }
+
+        @media (max-width: 800px) {
+            article {
+                flex-direction: column;
+            }
+            p{
+                 width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="flex-container">
+        <p id="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iusto perferendis corrupti, ex
+            veniam incidunt quod porro placeat fuga pariatur quaerat. Quaerat sapiente dignissimos animi voluptates enim
+            voluptate harum officia!</p>
+
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt fuga magni cupiditate nam
+            suscipit sunt, expedita, ab facilis consectetur maxime repellendus quos exercitationem inventore rerum
+            consequatur, maiores porro pariatur.</p>
+
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, doloremque. Sunt obcaecati reiciendis
+            illo excepturi fugit mollitia libero numquam, tempora nihil ratione dolores, voluptas deserunt asperiores
+            blanditiis enim nam ab.</p>
+    </article>
+</body>
+
+</html>
