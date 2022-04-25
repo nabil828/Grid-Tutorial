@@ -2,68 +2,83 @@
 
 <head>
     <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        article {
-            /* height: 100%; */
-            display: flex;
-            background-color: white;
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            background-color: #2196F3;
             padding: 10px;
-            /* align-content: center; */
-            /* flex-wrap: wrap; */
-            /* align-items: center; */
-            /* justify-content: center; */
-
-        }
-
-        p {
-            color: black;
-            width: 200px;
-        }
-
-        #p1 {
-            background-color: #a2b9bc;
+            grid-template-areas: 
+            'area2 area1 area1 area1 area1 area1 area1 area1 area1 area1' 
             
+            'area3 area1 area1 area1 area1 area1 area1 area1 area1 area1'
+            
+            'area4 area1 area1 area1 area1 area1 area1 area1 area1 area1'
+            
+            'area5 area1 area1 area1 area1 area1 area1 area1 area1 area1'
+
+            'area6  area7 area8 area9 area10'
+            ;
 
         }
 
-        #p2 {
-            background-color: #b2ad7f;
-        
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            color: black;
         }
 
-        #p3 {
-            background-color: #878f99;
+        .item1 {
+            grid-area: area1
+        }
+        .item2 {
+            grid-area: area2
+        }
+        .item3 {
+            grid-area: area3
+        }
+        .item4 {
+            grid-area: area4
+        }
+        .item5 {
+            grid-area: area5
+        }
+        .item6 {
+            grid-area: area6
+        }
+        .item7 {
+            grid-area: area7
+        }
+        .item8 {
+            grid-area: area8
+        }
+        .item9 {
+            grid-area: area9
+        }
+        .item10 {
+            grid-area: area10
         }
 
-        @media (max-width: 800px) {
-            article {
-                flex-direction: column;
-            }
-            p{
-                 width: auto;
-            }
-        }
+
+       
     </style>
 </head>
 
 <body>
-    <article class="flex-container">
-        <p id="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iusto perferendis corrupti, ex
-            veniam incidunt quod porro placeat fuga pariatur quaerat. Quaerat sapiente dignissimos animi voluptates enim
-            voluptate harum officia!</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item5">6</div>
+        <div class="item5">7</div>
+        <div class="item5">8</div>
+        <div class="item5">9</div>
+        <div class="item5">10</div>
+    </div>
 
-        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt fuga magni cupiditate nam
-            suscipit sunt, expedita, ab facilis consectetur maxime repellendus quos exercitationem inventore rerum
-            consequatur, maiores porro pariatur.</p>
-
-        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, doloremque. Sunt obcaecati reiciendis
-            illo excepturi fugit mollitia libero numquam, tempora nihil ratione dolores, voluptas deserunt asperiores
-            blanditiis enim nam ab.</p>
-    </article>
 </body>
 
 </html>
